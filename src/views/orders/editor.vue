@@ -69,7 +69,7 @@
               <el-table-column label="Nome" prop="product.name"/>
               <el-table-column label="Preço" width="90">
                 <template slot-scope="scope" prop="product.image">
-                  <span>R$ {{ (scope.row.product.price).toFixed(2) }}</span>
+                  <span>R$ {{ parseFloat(scope.row.product.price).toFixed(2) }}</span>
                 </template>
               </el-table-column>
               <el-table-column label="Quantidade" width="150">
